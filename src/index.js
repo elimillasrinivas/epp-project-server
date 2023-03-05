@@ -12,7 +12,7 @@ const { getAuthenticate } = require("./authentication/authentication");
 const conn=require("./connection/connect");
 conn();//connection with backend established
 dotenv.config();
-const reactUrl = process.env.REACT_URL || "https://magenta-paletas-9f0a10.netlify.app"
+const reactUrl = "https://magenta-paletas-9f0a10.netlify.app"
 
 const app = express();
 app.use(cors({
