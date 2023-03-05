@@ -12,7 +12,7 @@ const { getAuthenticate } = require("./authentication/authentication");
 const conn=require("./connection/connect");
 conn();//connection with backend established
 dotenv.config();
-const reactUrl = process.env.REACT_URL || "https://jovial-kleicha-9e68df.netlify.app"
+const reactUrl = process.env.REACT_URL || "https://magenta-paletas-9f0a10.netlify.app"
 
 const app = express();
 app.use(cors({
@@ -24,9 +24,9 @@ app.use(session({
     saveUninitialized: false,
     secret: "secret",
     cookie: {
-        secure:false,            ////secre should be true for https
+        secure:true,            ////secre should be true for https
         maxAge: 60*60*1000,
-        sameSite: "lax"       //////none for https............
+        sameSite: "none"       //////none for https............
     }
 }
 
