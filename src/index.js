@@ -12,7 +12,7 @@ const { getAuthenticate } = require("./authentication/authentication");
 const conn=require("./connection/connect");
 conn();//connection with backend established
 dotenv.config();
-const reactUrl = "https://eventproposalpage-project.netlify.app' "
+const reactUrl = "https://eventproposalpage-project.netlify.app"
 
 const app = express();
 app.use(cors({
